@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YPMedia_Example' do
+  pod 'YPMedia', :path => '../'
+
+  target 'YPMedia_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
