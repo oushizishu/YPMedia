@@ -1,0 +1,6 @@
+framework module YPPermission {
+  umbrella header "YPPermission-umbrella.h"
+
+  export *
+  module * { export * }
+}

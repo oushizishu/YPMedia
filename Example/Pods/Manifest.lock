@@ -1,0 +1,33 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - YPFoundation (0.4.0)
+  - YPMedia (0.1.0):
+    - YPFoundation
+    - YPMedia/Lame (= 0.1.0)
+    - YPPermission
+  - YPMedia/Lame (0.1.0):
+    - YPFoundation
+    - YPPermission
+  - YPPermission (0.9.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - YPMedia (from `../`)
+
+EXTERNAL SOURCES:
+  YPMedia:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  YPFoundation: 5145903beb3666ec3ab774a49fdc3283d804102f
+  YPMedia: aa6ee777664327ba45ade8195377150f004a10e8
+  YPPermission: d1270ca497cb2d608be700263ea0e68089a69e7b
+
+PODFILE CHECKSUM: 30f8637d08967d1525d355dfb1edc8180817f589
+
+COCOAPODS: 1.2.1

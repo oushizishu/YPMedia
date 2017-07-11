@@ -1,0 +1,6 @@
+framework module YPMedia {
+  umbrella header "YPMedia-umbrella.h"
+
+  export *
+  module * { export * }
+}

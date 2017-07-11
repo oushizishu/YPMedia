@@ -1,0 +1,6 @@
+framework module YPFoundation {
+  umbrella header "YPFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

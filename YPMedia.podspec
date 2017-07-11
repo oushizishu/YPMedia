@@ -29,14 +29,26 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.requires_arc = true
 
-  s.source_files = 'YPMedia/Classes/**/*'
+  s.source_files = 'YPMedia/Classes/**/*.{h,m,c,cpp,mm,plist,xib}'
   
   # s.resource_bundles = {
   #   'YPMedia' => ['YPMedia/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'YPMedia/Classes/**/*.h'
+  s.xcconfig = { "ENABLE_BITCODE" => "NO" }
+
+ # s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
+
+  s.default_subspec = 'Lame'
+   s.subspec 'Lame' do |lame|
+     lame.vendored_libraries = 'YPMedia/Classes/ConvertToMP3/*.a'
+   end
+
+  s.dependency 'YPPermission'
+  s.dependency 'YPFoundation'
+
+
 end
